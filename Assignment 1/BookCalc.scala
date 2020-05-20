@@ -1,20 +1,20 @@
 object BookCalc extends  App{
-  def Calculate(x:Int)= {
-
-    val bookPrice:Double=24.95; //cover price of book
-    var wholePrice:Double=0     //A temporary variable is taken to store whole price
-    
-    if(x>50) {
-      wholePrice=((x-50)*(0.75)+(x*bookPrice))+3;
-      wholePrice;
+  def CalculateShopping(y:Int)={
+    //Function used to calculate shopping cost seperately
+    if(y>50) {
+      (y-50)*(0.75)+(y*24.95);
     }
     else{
-      wholePrice=(x*bookPrice)+3;
-      wholePrice;
+      y*24.95;
     }
+
+  }
+  def CalculateTotal(x:Int)= {
+    
+    (CalculateShopping(x)+3)/100*60;  //40% discount
     
   }
 
-  println(Calculate(20));
+  println("total wholesale cost for 60 copies = "+CalculateTotal(60));
 
 }

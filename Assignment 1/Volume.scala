@@ -5,6 +5,6 @@ object Volume extends  App{
     
   }
 
-  println(Calculate(5));
+  println("Volume of a sphere with radius 5 = "+Calculate(5));
 
 }

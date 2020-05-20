@@ -5,6 +5,6 @@ object Fahren extends  App{
     
   }
 
-  println(CeltoFahren(35));
+  println(" 35 Celcius in Fahrenheit = "+CeltoFahren(35)+" F");
 
 }
